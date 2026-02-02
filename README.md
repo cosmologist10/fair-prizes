@@ -15,21 +15,24 @@ Based on the research paper: [Fair Prize Distribution](https://arxiv.org/pdf/160
 ## Installation
 
 ```bash
-npm install fair-prizes
-```
-
-Or clone and install locally:
-
-```bash
+# Clone the repository
 git clone https://github.com/yourusername/fair-prizes.git
 cd fair-prizes
+
+# Install dependencies
 npm install
+```
+
+Or install directly from GitHub:
+
+```bash
+npm install github:yourusername/fair-prizes
 ```
 
 ## Quick Start
 
 ```javascript
-import { finalCoinDistribution } from 'fair-prizes';
+import { finalCoinDistribution } from './index.js';
 
 // Distribute 10,000 coins among 100 winners (min 10 coins each)
 const result = finalCoinDistribution(100, 10000, 10);
@@ -88,7 +91,7 @@ node bin/cli.js
 Example session:
 ```
 ===========================================
-   POOL PAYOUT STRUCTURE - Interactive Demo
+   FAIR PRIZES - Interactive Demo
 ===========================================
 
 Enter number of winners: 50
@@ -146,7 +149,7 @@ Rounding can cause small discrepancies. The algorithm redistributes leftovers by
 
 ### Tournament Payout
 ```javascript
-import { finalCoinDistribution } from 'fair-prizes';
+import { finalCoinDistribution } from './index.js';
 
 // Esports tournament: 500 participants, $50,000 prize pool, $20 minimum
 const payout = JSON.parse(finalCoinDistribution(500, 50000, 20));
