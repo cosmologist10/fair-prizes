@@ -78,7 +78,7 @@ const presets = {
 async function main() {
     console.log('');
     console.log('='.repeat(55));
-    console.log('   POOL PAYOUT STRUCTURE - Interactive Demo');
+    console.log('   FAIR PRIZES - Interactive Demo');
     console.log('   Fair prize distribution using Zipf distribution');
     console.log('='.repeat(55));
 

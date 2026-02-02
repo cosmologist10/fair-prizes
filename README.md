@@ -1,4 +1,4 @@
-# Pool Payout Structure
+# Fair Prizes
 
 A fair prize pool distribution algorithm that divides prizes among winners using **Zipf distribution** and **nice numbers**. Perfect for tournaments, lotteries, gaming platforms, and any scenario requiring equitable prize distribution.
 
@@ -15,21 +15,21 @@ Based on the research paper: [Fair Prize Distribution](https://arxiv.org/pdf/160
 ## Installation
 
 ```bash
-npm install pool-payout-structure
+npm install fair-prizes
 ```
 
 Or clone and install locally:
 
 ```bash
-git clone https://github.com/yourusername/pool-payout-structure.git
-cd pool-payout-structure
+git clone https://github.com/yourusername/fair-prizes.git
+cd fair-prizes
 npm install
 ```
 
 ## Quick Start
 
 ```javascript
-import { finalCoinDistribution } from 'pool-payout-structure';
+import { finalCoinDistribution } from 'fair-prizes';
 
 // Distribute 10,000 coins among 100 winners (min 10 coins each)
 const result = finalCoinDistribution(100, 10000, 10);
@@ -146,7 +146,7 @@ Rounding can cause small discrepancies. The algorithm redistributes leftovers by
 
 ### Tournament Payout
 ```javascript
-import { finalCoinDistribution } from 'pool-payout-structure';
+import { finalCoinDistribution } from 'fair-prizes';
 
 // Esports tournament: 500 participants, $50,000 prize pool, $20 minimum
 const payout = JSON.parse(finalCoinDistribution(500, 50000, 20));
@@ -189,7 +189,7 @@ npm test
 ## Project Structure
 
 ```
-pool-payout-structure/
+fair-prizes/
 ├── index.js              # Main entry point
 ├── src/
 │   └── distribute.js     # Core algorithm implementation

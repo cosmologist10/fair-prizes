@@ -1,5 +1,5 @@
 {
-  "name": "pool-payout-structure",
+  "name": "fair-prizes",
   "version": "1.0.0",
   "description": "Fair prize pool distribution algorithm using Zipf distribution and nice numbers for tournaments, lotteries, and gaming platforms",
   "main": "index.js",

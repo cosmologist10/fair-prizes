@@ -1,5 +1,5 @@
 /**
- * Pool Payout Structure - Usage Examples
+ * Fair Prizes - Usage Examples
  *
  * Run with: node examples/basic.js
  */
